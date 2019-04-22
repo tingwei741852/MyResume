@@ -670,4 +670,7 @@ html, body {
   .rt-size {
     font-size: 17px;
   }
+  .coll-btn{
+    top: 70px
+  }
 }

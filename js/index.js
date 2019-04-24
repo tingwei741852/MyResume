@@ -88,15 +88,36 @@ function showDivsb1(n) {
   y[slideIndexb1-1].style.display = "block";  
   
 }
-//切換前後端
-function changeworks(n) {
+function changefro(n) {
   var i;
-  var x = document.getElementsByClassName("cw-front");
-
+  var x = document.getElementsByClassName("cwf-pro");
+  var o=document.getElementsByClassName("cwf-option");
   
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none"; 
+    o[i].style.backgroundColor="#ACBD86";
   }
-  x[n].style.display = "block";   
+  x[n].style.display = "block";
+  o[n].style.backgroundColor="#D95858";
   
 }
+//切換前後端
+function changeworks(n) {
+  
+  var s;
+  var g = document.getElementsByClassName("cw-front");
+  var o=document.getElementsByClassName("coll-option");
+      
+
+  
+  for (s = 0; s < g.length; s++) {
+     g[s].style.display = "none";
+     o[s].style.backgroundColor="#fff";
+    o[s].style.color="#000";
+  }
+  g[n].style.display = "block";   
+  o[n].style.backgroundColor="#ACBD86";
+  o[n].style.color="#fff";
+  
+}
+
